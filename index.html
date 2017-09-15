@@ -33,7 +33,7 @@
                 </nav>
                 <div id="slide">
                     <div id="main-image">
-                        <img id="img-main" src="http://www.color-hex.com/palettes/7707.png">
+                        <img id="img-main" src="https://s2.glbimg.com/krHN440Xr9wklS93fu0riKmwwLo=/0x0:1920x1080/1158x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2017/t/n/NWKRieRAAeNBPs2tvfCA/iphone-8-e-8-plus-01-credito-thassius-veloso.jpg">
                     </div>
                     <div id="available-images">
                         <img src="http://www.color-hex.com/palettes/7707.png" height="90" width="130" class="image-options">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div id="vantagens">
-                <hr align="center" width="90%">
+                <hr align="center" width="100%">
                     <div class="vantagem">
                         <div class="caixa-colocacao">
                             <h1 class="colocacao">1º</h1>
@@ -91,10 +91,10 @@
                             <p class="texto-vantagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et faucibus nibh, a sollicitudin orci. Duis dolor enim, placerat eu ultrices sit amet, imperdiet vel. </p>
                         </div>
                         </div>
-                        <hr align="center" width="90%">
+                        <hr align="center" width="100%">
                 </div>
 
-            <div id="Passos">
+            <div id="passos">
                 <div class="caixa-passo">
                     <h2 id="numeracao-passo">1º passo</h2>
                     <img src="http://www.color-hex.com/palettes/7707.png" height="60" width="60" class="img-passo">
@@ -126,7 +126,7 @@
                         Execução do projeto.
                     </p>
                 </div>
-
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OCR-A_char_Long_Vertical_Mark.svg/387px-OCR-A_char_Long_Vertical_Mark.svg.png" height="350" width="1" id="separador">
                 <div id="comece-agora">
                     <button id="botao-comece-agora" onclick="#">Começe Agora</button>
                 </div>
@@ -134,24 +134,30 @@
 
             <div id="contate-nos">
                 <h2>Contate-nos</h2>
-                <form>
-                    <input type="text" name="" class="email-nome" placeholder="Nome"><br>
-                    <input type="text" name="" class="email-nome" placeholder="E-mail"><br>
-                    <select>
-                        <option value="" hidden disabled selected>Cidade</option>
-                    </select><br>
-                    <input type="text" name="" id="assunto" placeholder="Assunto"><br>
-                    <input type="text" name="" id="mensagem" placeholder="mensagem">
-                    <input type="text" name="" class="tel-cel" placeholder="Telefone"><br>
+                <form id="formulario-cadastro">
+                    <div id="margem-esq">
+                        <input type="text" name="" class="email-nome email-cidade" placeholder="Nome"><br>
+                        <input type="text" name="" class="email-nome email-cidade" placeholder="E-mail"><br>
+                        <select id="cidades">
+                            <option value="" hidden disabled selected>Cidade</option>
+                        </select><br>
+                        <input type="text" name="" id="assunto"  placeholder="Assunto">
+                        <br>
+                        <input type="text" name="" id="mensagem"  placeholder="mensagem"><br>
+                        <button id="btn-enviar" type="submit">Enviar</button>
+                    </div>
+                    <input  id="tel-input" type="text" name="" class="tel-cel" placeholder="Telefone"><br>
                     <input type="text" name="" class="tel-cel" placeholder="Celular"><br>
-                    <button id="enviar" type="submit">Enviar</button>
+
                 </form>
-                <p class="contato">contato@solarsantos.com.br<p>
-                <p class="contato">Fone(65) 6666-6666</p>
-                <p class="contato">WhatsApp(65) 96666-6666</p>
-                <p class="contato">Vivo(65) 96666-6666</p>
-                <p class="contato">Skype: Solar.Santos</p>
-                <p class="contato">Facebook/Solar.Santos</p>
+                <div id="contato-solarsantos">
+                    <p class="contato">contato@solarsantos.com.br<p>
+                    <p class="contato">Fone(65) 6666-6666</p>
+                    <p class="contato">WhatsApp(65) 96666-6666</p>
+                    <p class="contato">Vivo(65) 96666-6666</p>
+                    <p class="contato">Skype: Solar.Santos</p>
+                    <p class="contato">Facebook/Solar.Santos</p>
+                </div>
             </div>
             <hr align="left" width="80%">
             <div id="endereco">

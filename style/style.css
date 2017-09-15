@@ -1,10 +1,10 @@
 
 @font-face{
-    font-family: 'fonte-padrao;
+    font-family: 'fonte-padrao';
     src: url('font/fonts/v4013/Raleway-v4013-Black') format("truetype");
 }
 .fonte-padrao{
-    font-family: 'fonte-padrao'
+    font-family: 'fonte-padrao';
 }
 
 body {
@@ -15,13 +15,11 @@ body {
 
 img{
     max-width:100%;
-
 }
 
 nav {
     width: 100%;
     height: 200px;
-    border: 1px solid black;
     margin-bottom: 7%;
 }
 
@@ -52,7 +50,6 @@ nav {
     height: 150px;
     width: 300px;
     margin-top: 2%;
-
 }
 
 a{
@@ -82,13 +79,14 @@ a{
 }
 
 #main-image {
- margin: auto;
+  margin: auto;
   width: 100%;
 }
 
 #img-main{
     width: 100%;
-    height: 300px;
+    height: auto;
+    max-height: 500px;
 }
 
 #quem-somos {
@@ -113,50 +111,122 @@ a{
 }
 
 #vantagens {
-
-    height: 245px;
     width: 90%;
-    margin-left: 4.4%;
+    margin: auto;
+    margin-bottom: 4%;
 }
 
 .vantagem {
     display: flex;
     width: 100%;
-    height: 32%;
 
 }
 
 .caixa-colocacao {
-    width: 7%;
+    width: 5.3%;
 
 }
 
 .colocacao {
-    position: relative;
-    top: 1%;
+    width: 100%;
     text-align: center;
+
 }
 
 .texto-vantagem {
-    width: 90%;
-    height: 40px;
-    position: relative;
-    left: 70px;
-    bottom: 70%;
+    width: 89.5%;
 
 }
 
 .caixa-info {
-    position: relative;
 
+    display: flex;
     width: 100%;
-    height: 80px;
-
 }
 
 .img-vantagem {
-    position: relative;
     margin-top: 1.2%;
-    right: 10px;
+    margin-right: 10px;:
 }
 
+#passos{
+    display: flex;
+    height: 450px;
+}
+
+.img-passo {
+    width: 65%;
+    height:  40%;
+    min-width: 175px;
+}
+
+.caixa-passo {
+    width: 21%;
+    text-align: center;
+}
+
+.texto-passo {
+    font-size: 18px;
+}
+
+#separador {
+
+}
+
+#comece-agora {
+    margin-top: 150px;
+    margin-left: 2%;
+    margin-right: 6%;
+}
+
+#contate-nos {
+    border:  1px solid;
+
+}
+
+.email-nome {
+    width: 20%;
+}
+
+#margem-esq {
+    margin-left: 2%;
+
+}
+
+.email-cidade {
+    margin-bottom: 1%;
+}
+
+#cidades{
+    margin-bottom: 3%;
+}
+
+#assunto{
+    width: 15%;
+    margin-bottom: 1%;
+}
+
+#mensagem{
+    width: 50%;
+    padding-bottom: 10%;
+}
+
+#btn-enviar{
+    width: 7%;
+    margin-left: 43.2%;
+    margin-top: 1.5%;
+}
+
+.tel-cel{
+    width: 20%;
+
+
+}
+
+#tel-input{
+    margin-bottom: 1%;
+}
+
+#contato-solarsantos{
+
+}
