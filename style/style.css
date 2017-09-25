@@ -1,16 +1,44 @@
-
-@font-face{
-    font-family: 'fonte-padrao';
-    src: url('font/fonts/v4013/Raleway-v4013-Black') format("truetype");
+/* cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v14/DgBpgaYycijFA8v2hNt7MfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
-.fonte-padrao{
-    font-family: 'fonte-padrao';
+/* vietnamese */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v14/peRd8sj511qE2lHtK-QfcPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v14/yg0glPPxXUISnKUejCX4qfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v14/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 body {
+  font-family: Oswald, sans-serif;
     margin: auto;
-    width: 90%;
-     border: 1px solid black;
+     height: auto;
+}
+
+.main-cointainer{
+    width: 85%;
 }
 
 img{
@@ -19,21 +47,35 @@ img{
 
 nav {
     width: 100%;
-    height: 200px;
-    margin-bottom: 7%;
+    height: auto;
+    
 }
 
 .container{
     width: 100%;
+    height: 100%;
     margin:auto;
     max-width: 1360px;
 }
 
 #nav-contato {
-    float: right;
+    position: absolute;
+    right: 0.5%;
+    font-size:  15px;
+    width:  245px;
     margin-top: 1%;
     overflow: hidden;
+    display: flex;
+    
+}
 
+#container-nav-contato1 {
+    width: 52%;
+
+}
+
+#container-nav-contato2 {
+    width:  48%;
 }
 
 .img-contato {
@@ -45,36 +87,54 @@ nav {
     font-size: 100%;
 }
 
+#logo-menu {
+    width: 99%;
+    display: flex;
+}
 
-#logo{
-    height: 150px;
-    width: 300px;
-    margin-top: 2%;
+#container-logo {
+     width: 50%;
+     min-width: 530px;
+     height: 80%;
+     
+     margin-top: 10px;
+}
+
+#menu{
+    margin-top:  8.5em;
+    height:  20%;
+    width: 50%;
+    text-align:  right;
+
 }
 
 a{
     text-decoration: none;
+    color: #2e3695;
+}
+ 
+ul{
+  list-style: none;
 }
 
-#nav-menu{
-    position: relative;
-    bottom: 15%;
-
-    left: 30%;
-    width: 70%;
-
+li{
+  display: inline;
 }
 
 .menu-link{
     font-size: 22px;
 }
 
-/*margem entre as opcoes de navegação*/
-.apply-margin-left{
-    margin: 0 0 0 8%;
+#menu li a:hover {
+    border-bottom:  4px solid #f15d24;
 }
 
-#slide {
+/*margem entre as opcoes de navegação*/
+.apply-margin-left{
+    margin: 0 0 0 4%;
+}
+
+#gallery {
     width: 100%;
 }
 
@@ -99,15 +159,17 @@ a{
     width: 44%;
     margin-left: 9%;
     margin-right: 3%;
+    margin-top: 9%;
     border: 1px solid black;
 
 }
 
 #bloco-alinhado {
-    display: flex;
+        display: flex;
     height: 590px;
     margin-top: 2%;
     margin-bottom: 5%;
+    text-align: justify;
 }
 
 #vantagens {
@@ -124,24 +186,23 @@ a{
 
 .caixa-colocacao {
     width: 5.3%;
-
 }
 
 .colocacao {
     width: 100%;
     text-align: center;
-
 }
 
 .texto-vantagem {
     width: 89.5%;
-
+    margin-top: 1.2%;
 }
 
 .caixa-info {
-
     display: flex;
     width: 100%;
+    height: 80px;
+
 }
 
 .img-vantagem {
@@ -157,7 +218,8 @@ a{
 .img-passo {
     width: 65%;
     height:  40%;
-    min-width: 175px;
+    min-width: 150px;
+    min-height: 30%;
 }
 
 .caixa-passo {
@@ -169,64 +231,374 @@ a{
     font-size: 18px;
 }
 
-#separador {
-
-}
-
 #comece-agora {
     margin-top: 150px;
     margin-left: 2%;
     margin-right: 6%;
 }
 
-#contate-nos {
-    border:  1px solid;
-
+.email-nome {
+    width: 100%;
+    height:  20px;
+    margin-bottom: 2%;
 }
 
-.email-nome {
-    width: 20%;
+.cel-tel {
+    width: 100%;
+    height:  20px;
+    margin-bottom: 3.7%;
 }
 
 #margem-esq {
-    margin-left: 2%;
-
-}
-
-.email-cidade {
-    margin-bottom: 1%;
+    width: 60%;
+    margin-right: 3%;
 }
 
 #cidades{
-    margin-bottom: 3%;
+    width: 51%;
+    height:  25px;
+    margin-bottom: 6%;
 }
 
 #assunto{
-    width: 15%;
-    margin-bottom: 1%;
+    width: 50%;
+    height:  20px;
+    margin-bottom: 2%;
 }
 
 #mensagem{
-    width: 50%;
+    width: 100%;
     padding-bottom: 10%;
+    height: 100px;
 }
 
 #btn-enviar{
-    width: 7%;
-    margin-left: 43.2%;
+    border:  none;
+    width:  25%;
+    height:  25px;
     margin-top: 1.5%;
+    margin-left: 75.9%;
 }
 
-.tel-cel{
-    width: 20%;
+#tel-cel{
+    width: 30%;
+}
+
+#contato-titulo {
+    font-size: 20px;
+    height: 50px;
+    width: 90%;
+    margin-left: 2%;
+}
+
+#contate-nos {
+    display: flex;
+    width: 90%;
+    margin-left: 2%;
+}
+
+#formulario-cadastro {
+    display: flex;
+    padding-top: 1.8%;
+    width: 70%;
+}
+
+#contato-solarsantos {
+    width:  30%;
+    padding-left: 1%;
+}
+
+#footer-separator{
+    min-width: 765px;
+}
+
+#rodape {
+     display:  inline-flex;
+     width: 100%;
+     height:  300px;
+     margin-top: 1.5%;
+}
+
+#endereco h1 {
+    margin-top: -0.5%;
+
+}
+
+#endereco {
+    width: 17%;
+    margin-left:  2%;
+    margin-right: 10px;
+
+}
+
+#mapa {
+    width: 40%;
+    min-width:  450px;
+    border: 1px solid;
+    margin-right:  4.4%;
+}
+
+
+#siga-nos h1 {
+    margin-top: -0.5%;
+    margin-left:  6%;
+    min-width: 150px;
+}
+
+#siga-nos {
+    width: 100%;
+
+}
+
+
+
+.img-redes-sociais {
+    display: -webkit-inline-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-inline-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-inline-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-inline-flex;     /* NEW - Chrome */
+    display:  inline-flex;
+    width:  45px;
+    height: 45px;
+    margin-left:  6%;
+}
+
+
+@media only screen
+and (max-width : 1300px) {
+    .apply-margin-left{
+        margin: 0 0 0 2.5%;
+    }
+        #nav-menu{
+         position: relative;
+         bottom: 15%;
+         left: 35.5%;
+         width: 70%;
+    }
+}
+
+
+@media only screen
+and (max-width : 1200px) {
+        #bloco-alinhado {
+        display: block;
+        height: auto;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    #noticias {
+    width: 80%;
+    min-width: 500px;
+    height: 500px;
+     margin-left: 0%;
+    margin-right: 0%;
+    margin: auto;
+    border: 1px solid black;
+    }
+
+    #quem-somos {
+            font-size: 20px;
+            width: 100%;
+            margin-left: 2%;
+    }
+}
+
+@media only screen
+and (max-width : 1120px) {
+  #logo-menu {
+    display: block;
+  }
+
+  #menu{
+    bottom: 0%;
+    margin-top:  10px;
+    height:  20%;
+    width: 100%;
+    text-align:  center;
+  }
+
+  .apply-margin-left{
+    margin-left: 10%;
+    
+  }
+
+  nav{
+    margin-bottom: 0px;
+  }
+}
+
+
+@media only screen
+and (max-width : 950px) {
+        #passos{
+                display: flex;
+                height: auto;
+        }
+
+        .img-passo {
+            width: 40%;
+            height:  25%;
+            min-width: 100px;
+            min-height: 15%;
+        }
+
+        #mensagem{
+            width: 155%;
+            padding-bottom: 10%;
+            height: 100px;
+        }
+        #endereco {
+            width: 17%;
+            margin-left:  2%;
+            margin-right: 20px;
+
+        }
+        #mapa{
+            margin-right:  2%;
+        }
+        .texto-passo {
+            font-size: 15px;
+        }
+
+        .passo{
+            font-size: 20px;
+        }
+
+        .apply-margin-left{
+          margin-left: 8%;
+        }
+
+}
+
+@media only screen
+and (max-width : 768px) {
+        .caixa-colocacao {
+                margin-right: 6px;
+        }
+
+        .img-vantagem {
+                margin-top: 1.6%;
+        }
+        #rodape {
+            display:  block;
+        }
+
+        #endereco {
+            width: 100%;
+            margin-left:  2%;
+            margin-right: 10px;
+        }
+        #siga-nos {
+            width: 300px;
+
+        }
+        #footer-separator{
+            width: 85%;
+            min-width : 450px;
+
+        }
+
+        #mapa{
+            margin-bottom:  5%;
+            height: 300px;
+        }
+
+        #separador-rodape{
+            height: 0px;
+            width: 0px;
+        }
+
+        .dropdown-menu{
+          display: block;
+          height: 40px;
+          width: 100%;
+          min-width: 40px;
+          
+          background: url(images/dropdown-icon.png) no-repeat 98% center;
+          background-size: 40px 40px;
+        }
+
+        nav{
+          margin-bottom: 2%;
+        }
+
+        nav ul{
+          position: absolute;
+          overflow: hidden;
+          text-align: center;
+          background-color: #2e3695;
+          height: 0;
+        }
+
+        nav ul li{
+          display: block;
+        }
+
+        nav ul li a{
+          display: block;
+          margin: 0;
+          color: white;
+
+        }
+
+        #menu li a:hover{
+          border-bottom: 2px white solid;
+        }
+
+
+        .apply-margin-left{
+          margin-left: 0px;
+        }
+
+        nav ul.open{
+          float: right;
+          height: 175px;
+          z-index: 1;
+          width: 123px;
+          padding-right: 10px;
+          padding-left: 10px;
+          padding-top: 5px;
+          border-radius: 10px;
+        }
+
+        #slideshow{
+          z-index: 0;
+        }
+}
+
+@media only screen
+and (max-width : 560px) {
+  #container-logo {
+     margin: auto;
+     width: 100%;
+     min-width: 0px;
+     margin-top: 10px;
+  }
+
+  #nav-contato {
+    font-size:  20px;
+    width: 315px;
+    margin-top: 30%;
+}
+
+  .dropdown-menu{
+    background: url(images/dropdown-icon.png) no-repeat 5% center;
+    background-size: 40px 40px;
+  }
+
+  .open{
+    float: left;
+    height: 175px;
+    z-index: 1;
+    width: 123px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    top: 27%;
+    left: 4%;
+    border-radius: 10px;
+  }
 
 
 }
 
-#tel-input{
-    margin-bottom: 1%;
-}
-
-#contato-solarsantos{
-
-}

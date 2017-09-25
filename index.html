@@ -3,49 +3,76 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style/style.css">
-        <link rel="stylesheet" type="text/css" href="font/fonts/v4020/Raleway-v4013-Black">
+        <link href='style/font' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+       <link rel="stylesheet" type="text/css" href="Create-A-Fullscreen-Responsive-Image-Gallery-with-jQuery/css/slideshow.css">
+       <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+       <script src="Create-A-Fullscreen-Responsive-Image-Gallery-with-jQuery/js/gallery.js"></script>
+       <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+       <script type="text/javascript" src="js/menu.js"></script>
+
+         <title>Solar Santos</title>
     </head>
     <body class="fonte-padrao">
-        <title>Solar Santos</title>
+        <div class="main-container">
         <div class="container">
             <header>
                 <nav>
 
                     <div id="nav-contato">
-                        <img src="http://www.color-hex.com/palettes/7707.png" height="20" width="20" class="img-contato">
-                        <span class="texto-contato">(65) 9 6666-6666</span>
-                        <img src="http://www.color-hex.com/palettes/7707.png" height="20" width="20" class="img-contato">
-                        <span class="texto-contato">(65) 6666-6666</span>
-                        <hr align="left" width="100%">
+                        <div id="container-nav-contato1">
+                            <img src="style/icon/telefone.png" height="18" width="18" class="img-contato">
+                            <span class="texto-contato">(65) 9 6666-6666</span>
+                        </div>
+                        <div id="container-nav-contato2">
+                            <img src="style/icon/telefone.png" height="18" width="18" class="img-contato">
+                            <span class="texto-contato">(65) 6666-6666</span>
+                        </div>
                     </div>
 
-                        <img id="logo" src="http://www.color-hex.com/palettes/7707.png" >
-
-                    <div id="nav-menu">
-
-                            <span class="menu-link"><a href="">Página Inicial</a></span>
-                            <span class="menu-link apply-margin-left" ><a href="">Como Funciona</a></span>
-                            <span class="menu-link apply-margin-left"><a href="">Dúvidas</a></span>
-                            <span class="menu-link apply-margin-left"><a href="">Equipe</a></span>
-                            <span class="menu-link apply-margin-left"><a href="">Orçamento</a></span>
-
+                    <div id="logo-menu">
+                        <div id="container-logo">
+                            <img id="logo" src="style/images/Solar_Santos1.png" >
+                        </div>
+                        <div id="menu">
+                        	<a class="dropdown-menu"></a>
+	                        <ul>
+	                            <li><span class="menu-link first-link"><a href="">Página Inicial</a></span></li>
+	                            <li><span class="menu-link apply-margin-left" ><a href="">Como Funciona</a></span></li>
+	                            <li><span class="menu-link apply-margin-left"><a href="">Dúvidas</a></span></li>
+	                            <li><span class="menu-link apply-margin-left"><a href="">Equipe</a></span></li>
+	                            <li><span class="menu-link apply-margin-left last-link"><a href="">Orçamento</a></span></li>
+	                        </ul>
+                        </div>
                     </div>
                 </nav>
-                <div id="slide">
-                    <div id="main-image">
-                        <img id="img-main" src="https://s2.glbimg.com/krHN440Xr9wklS93fu0riKmwwLo=/0x0:1920x1080/1158x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2017/t/n/NWKRieRAAeNBPs2tvfCA/iphone-8-e-8-plus-01-credito-thassius-veloso.jpg">
-                    </div>
-                    <div id="available-images">
-                        <img src="http://www.color-hex.com/palettes/7707.png" height="90" width="130" class="image-options">
-                        <img src="http://www.color-hex.com/palettes/7707.png" height="90" width="130" class="image-options">
-                        <img src="http://www.color-hex.com/palettes/7707.png" height="90" width="130" class="image-options">
-                        <img src="http://www.color-hex.com/palettes/7707.png" height="90" width="130" class="image-options">
-                        <img src="http://www.color-hex.com/palettes/7707.png" height="90" width="130" class="image-options">
-                        <img src="http://www.color-hex.com/palettes/7707.png" height="90" width="130" class="image-options">
-                    </div>
-                </div>
+
             </header>
-            <div id=bloco-alinhado>
+
+        </div>
+</div>
+        <div id="container">
+            <div id="slideshow" >
+            <!-- Below are the images in the gallery -->
+            <div id="img-1" data-img-id="1" class="img-wrapper active" style="background-image: url('Create-A-Fullscreen-Responsive-Image-Gallery-with-jQuery/images/img1.jpg')"></div>
+            <div id="img-2" data-img-id="2" class="img-wrapper" style="background-image: url('Create-A-Fullscreen-Responsive-Image-Gallery-with-jQuery/images/img2.jpg')"></div>
+            <div id="img-3" data-img-id="3" class="img-wrapper" style="background-image: url('Create-A-Fullscreen-Responsive-Image-Gallery-with-jQuery/images/img3.jpg')"></div>
+
+            <!-- Below are the thumbnails of above images -->
+            <div class="thumbs-container bottom">
+            <div id="prev-btn" class="prev"> <i class="fa fa-chevron-left fa-3x"></i> </div>
+            <ul class="thumbs">
+            <li data-thumb-id="1" class="thumb active" style="background-image: url('Create-A-Fullscreen-Responsive-Image-Gallery-with-jQuery/images/img1-thumb.jpg')"></li>
+            <li data-thumb-id="2" class="thumb" style="background-image: url('Create-A-Fullscreen-Responsive-Image-Gallery-with-jQuery/images/img2-thumb.jpg')"></li>
+            <li data-thumb-id="3" class="thumb" style="background-image: url('Create-A-Fullscreen-Responsive-Image-Gallery-with-jQuery/images/img3-thumb.jpg')"></li>
+            </ul>
+            <div id="next-btn" class="next"> <i class="fa fa-chevron-right fa-3x"></i> </div>
+            </div>
+            </div>
+            </div>
+<div class="main-container">
+            <div class="container">
+            <div id="bloco-alinhado">
                 <div id="quem-somos">
                     <h1>Quem Somos</h1>
                     <p>
@@ -57,10 +84,10 @@
 
                     </div>
                     <div id="noticias">
-
                     </div>
                 </div>
                 <div id="vantagens">
+                    <h1>Vantagens</h1>
                 <hr align="center" width="100%">
                     <div class="vantagem">
                         <div class="caixa-colocacao">
@@ -91,7 +118,7 @@
                             <p class="texto-vantagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et faucibus nibh, a sollicitudin orci. Duis dolor enim, placerat eu ultrices sit amet, imperdiet vel. </p>
                         </div>
                         </div>
-                        <hr align="center" width="100%">
+                        <hr width="100%">
                 </div>
 
             <div id="passos">
@@ -126,30 +153,34 @@
                         Execução do projeto.
                     </p>
                 </div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OCR-A_char_Long_Vertical_Mark.svg/387px-OCR-A_char_Long_Vertical_Mark.svg.png" height="350" width="1" id="separador">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OCR-A_char_Long_Vertical_Mark.svg/387px-OCR-A_char_Long_Vertical_Mark.svg.png" height="350" width="1" id="separador-passos">
                 <div id="comece-agora">
                     <button id="botao-comece-agora" onclick="#">Começe Agora</button>
                 </div>
             </div>
 
-            <div id="contate-nos">
+            <div id="contato-titulo">
                 <h2>Contate-nos</h2>
+            </div>
+            <div id="contate-nos">
                 <form id="formulario-cadastro">
                     <div id="margem-esq">
-                        <input type="text" name="" class="email-nome email-cidade" placeholder="Nome"><br>
-                        <input type="text" name="" class="email-nome email-cidade" placeholder="E-mail"><br>
+                        <input type="text" name="" class="email-nome" placeholder="Nome"><br>
+                        <input type="text" name="" class="email-nome" placeholder="E-mail"><br>
                         <select id="cidades">
                             <option value="" hidden disabled selected>Cidade</option>
                         </select><br>
                         <input type="text" name="" id="assunto"  placeholder="Assunto">
                         <br>
-                        <input type="text" name="" id="mensagem"  placeholder="mensagem"><br>
+                        <input type="text" name="" id="mensagem"  placeholder="Mensagem"><br>
                         <button id="btn-enviar" type="submit">Enviar</button>
                     </div>
-                    <input  id="tel-input" type="text" name="" class="tel-cel" placeholder="Telefone"><br>
-                    <input type="text" name="" class="tel-cel" placeholder="Celular"><br>
-
+                    <div id="tel-cel">
+                        <input  class="cel-tel" type="text" name="" placeholder="Telefone"><br>
+                        <input class="cel-tel" type="text" name="" placeholder="Celular"><br>
+                    </div>
                 </form>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OCR-A_char_Long_Vertical_Mark.svg/387px-OCR-A_char_Long_Vertical_Mark.svg.png" height="350" width="1" id="separador-contato">
                 <div id="contato-solarsantos">
                     <p class="contato">contato@solarsantos.com.br<p>
                     <p class="contato">Fone(65) 6666-6666</p>
@@ -159,32 +190,181 @@
                     <p class="contato">Facebook/Solar.Santos</p>
                 </div>
             </div>
-            <hr align="left" width="80%">
-            <div id="endereco">
-                <div id="mapa">
+            <br>
 
-                </div>
-                <div>
+            <hr id="footer-separator" align="left">
+            <footer id="rodape">
+                <div id="endereco">
                     <h1>Endereço</h1>
                     <p class="info-endereco">Av. das Loren, esq. com Rua 66</p>
                     <p class="info-endereco">Centro Com. Bello Monte, sala x</p>
                     <p class="info-endereco">Jd. Imperial - Cuiabá, MT</p>
                     <p class="info-endereco">CNPJ: 66.666.666/0000-66</p>
                 </div>
+                <div id="mapa">
 
-
-
-                <div id="Siga-nos">
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OCR-A_char_Long_Vertical_Mark.svg/387px-OCR-A_char_Long_Vertical_Mark.svg.png" height="300" width="1" id="separador-rodape">
+                <div id="contato-solarsantos">
+                <div id="siga-nos">
                     <h1>Siga-nos</h1>
                     <div id="imgs-redes-sociais">
-                        <img src="" class="img-redes-sociais">
-                        <img src="" class="img-redes-sociais">
-                        <img src="" class="img-redes-sociais">
-                        <img src="" class="img-redes-sociais">
+                        <img src="http://www.color-hex.com/palettes/7707.png" class="img-redes-sociais">
+                        <img src="http://www.color-hex.com/palettes/7707.png" class="img-redes-sociais">
+                        <img src="http://www.color-hex.com/palettes/7707.png" class="img-redes-sociais alinhar">
+                        <img src="http://www.color-hex.com/palettes/7707.png" class="img-redes-sociais alinhar">
                     </div>
                 </div>
-
             </div>
+            </footer>
         </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function() {
+
+    /******************************
+    * STATIC VARIABLES
+    ******************************/
+    var THUMBNAIL_WIDTH = 140,
+        GALLERY = $('#slideshow');
+
+
+    /******************************
+    * EVENT LISTENERS
+    ******************************/
+    GALLERY.find('.thumb').on('click', function() {
+        loadClickedImage($(this).data('thumb-id'));
+    });
+    GALLERY.find('#prev-btn').on('click', function() {
+        slidePrev();
+    });
+    GALLERY.find('#next-btn').on('click', function() {
+        slideNext();
+    });
+    $(document).keydown(function(e){
+        switch(e.keyCode) {
+            // Left arrow press
+            case 37:
+                slidePrev();
+                break;
+            // Right arrow press
+            case 39:
+                slideNext();
+                break;
+            default:
+                break;
+        }
+    });
+
+
+    /******************************
+    * GALLERY FUNCTIONS
+    ******************************/
+    var slideNext = function() {
+
+        var active = GALLERY.find('.img-wrapper.active');
+
+        if (active.length === 0) {
+            active = GALLERY.find('.img-wrapper:last');
+        }
+
+        // Setting next image & thumb properties
+        loadNextImage(active);
+    };
+
+    var loadNextImage = function(active) {
+        var next =  active.next(".img-wrapper").length ? active.next(".img-wrapper") : GALLERY.find('.img-wrapper:first'),
+            nextThumb = GALLERY.find('[data-thumb-id="' + next.data('img-id') + '"]');
+
+        // Setting next image & thumb properties
+        GALLERY.find('.thumb').removeClass('active');
+        nextThumb.addClass('active');
+        active.addClass('last-active');
+
+        // Transitioning to next image & thumbnail
+        scrollThumbnails(nextThumb);
+        next.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                active.removeClass('active last-active');
+            });
+    };
+
+    var slidePrev = function() {
+        var active = GALLERY.find('.img-wrapper.active');
+
+        if (active.length === 0) {
+            active = GALLERY.find('.img-wrapper:last');
+        }
+
+        // Setting next image & thumb properties
+        loadPrevImage(active);
+    };
+
+    var loadPrevImage = function(active) {
+        var prev =  active.prev(".img-wrapper").length ? active.prev(".img-wrapper") : GALLERY.find('.img-wrapper:last'),
+            prevThumb = GALLERY.find('[data-thumb-id="' + prev.data('img-id') + '"]');
+
+        // Setting next image & thumb properties
+        GALLERY.find('.thumb').removeClass('active');
+        prevThumb.addClass('active');
+        active.addClass('last-active');
+
+        // Transitioning to next image & thumbnail
+        scrollThumbnails(prevThumb);
+        prev.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                active.removeClass('active last-active');
+            });
+    };
+
+    var loadClickedImage = function(id) {
+        var image =  GALLERY.find('[data-img-id="' + id + '"]'),
+            imgThumb = GALLERY.find('[data-thumb-id="' + id + '"]'),
+            currActive = GALLERY.find('.img-wrapper.active');
+
+        // Setting image & thumb properties
+        GALLERY.find('.thumb').removeClass('active');
+        currActive.addClass('last-active').removeClass('active');
+        imgThumb.addClass('active');
+
+        // Transitioning to image & thumbnail
+        scrollThumbnails(imgThumb);
+        image.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                currActive.removeClass('last-active');
+            });
+    };
+
+    var scrollThumbnails = function(thumb) {
+        var offset, // used for thumbnail offset
+            first,  // stores first thumbnail object
+            x = thumb.position().left + parseInt(thumb.css('margin-left'), 10);
+
+        // Checking current thumbnail offset
+        if(x < 0) {
+            first = GALLERY.find('.thumb:first');
+            offset = parseInt(first.css('margin-left'), 10) - x;
+            first.animate({
+                marginLeft: offset
+            }, 1000);
+        } else {
+            x = thumb.position().left;
+            var currOffset = ( x + THUMBNAIL_WIDTH ) - thumb.parent().width();
+            if(currOffset > 0) {
+                first = GALLERY.find('.thumb:first');
+                offset = parseInt(first.css('margin-left'), 10) - currOffset;
+                first.animate({
+                    marginLeft: offset
+                }, 1000);
+            }
+        }
+    };
+}());
+    </script>
     </body>
 </html>
